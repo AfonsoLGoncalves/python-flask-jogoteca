@@ -1,0 +1,18 @@
+ports:
+  - port: 5000
+    onOpen: open-preview
+
+# https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv
+# https://flask.palletsprojects.com/en/2.1.x/config/
+tasks:
+  - before: |
+      export FLASK_APP=jogoteca
+      export FLASK_ENV=development
+    init: |
+      pip install -e .
+      flask index
+    command: |
+      flask run
+vscode:
+  extensions:
+    - ms-python.python
