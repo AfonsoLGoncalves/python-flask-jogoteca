@@ -6,9 +6,6 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - before: |
-    export FLASK_APP=jogoteca
-    export FLASK_ENV=development
   init: |
     python3 -m venv venv
     . venv/bin/activate
