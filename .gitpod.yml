@@ -11,7 +11,7 @@ vscode:
 
 tasks:
 command: |
-      uvicorn src.main:app --port 5000 --reload
+      python3 jogoteca.py
 
 
 github:
