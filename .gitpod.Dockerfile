@@ -1,9 +1,7 @@
-FROM ubuntu
+FROM gitpod/workspace-python:latest
 
 ENV  FLASK_APP=jogoteca.py
 
-RUN apt update
-RUN apt install python3-pip -y
 RUN pip3 install Flask
 
 WORKDIR /jogoteca
