@@ -10,9 +10,8 @@ vscode:
     - ms-python.python
 
 tasks:
-command: |
-      python3 jogoteca.py
-
+  - init: echo"start workspace"
+    command: python3 jogoteca.py
 
 github:
   prebuilds:
