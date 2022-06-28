@@ -10,7 +10,9 @@ vscode:
     - ms-python.python
 
 tasks:
-  command: python3 jogoteca.py
+command: |
+      uvicorn src.main:app --port 5000 --reload
+
 
 github:
   prebuilds:
