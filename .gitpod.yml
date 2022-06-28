@@ -9,6 +9,9 @@ vscode:
   extensions:
     - ms-python.python
 
+tasks:
+  command: python3 jogoteca.py
+
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
