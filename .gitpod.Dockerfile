@@ -4,6 +4,7 @@ ENV  FLASK_APP=jogoteca.py
 
 RUN apt update
 RUN apt install python3-pip -y
+RUN apt-get install git
 RUN pip3 install Flask
 
 WORKDIR /jogoteca
